@@ -2,7 +2,7 @@ openwrt:
   image: unifreq/openwrt-aarch64:latest
   restart: unless-stopped
   privileged: true
-  network_mode: macnet
+  network_mode: macvlan
   container_name: 'openwrt'
   hostname: 'openwrt'
   command:
