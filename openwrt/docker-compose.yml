@@ -1,9 +1,11 @@
-openwrt:
-  image: unifreq/openwrt-aarch64:latest
-  restart: unless-stopped
-  privileged: true
-  network_mode: 'macnet'
-  container_name: 'openwrt'
-  hostname: 'openwrt'
-  command:
-    - /sbin/init
+version: '2.0'
+services:
+  openwrt:
+    image: unifreq/openwrt-aarch64:latest
+    restart: unless-stopped
+    privileged: true
+    network_mode: 'macnet'
+    container_name: 'openwrt'
+    hostname: 'openwrt'
+    command:
+      - /sbin/init
