@@ -9,7 +9,6 @@ pagermaid:
     - ./config.yml:/var/lib/pagermaid/config.yml
     - ./plugins:/var/lib/pagermaid/plugins    
     - ./pagermaid.session:/var/lib/pagermaid/pagermaid.session
-    - ./dme.jpg:/var/lib/pagermaid/plugins/dme.jpg
   tty: true
   command:
     - /bin/sh
