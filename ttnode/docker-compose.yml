@@ -1,0 +1,9 @@
+ttnode:
+  image: zhang0510/ttnode-arm64
+  container_name: ttnode
+  network_mode: host 
+  privileged: true 
+  restart: always 
+  hostname: ttnode 
+  volumes:
+    - /mnts:/mnts
