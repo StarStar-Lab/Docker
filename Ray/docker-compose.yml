@@ -4,7 +4,9 @@ services:
     image: teddysun/xray
     restart: always
     container_name: "xray"
-    ports:
-      - "127.0.0.1:9000:9000"
+    network_mode: host  
     volumes:
-      - /etc/xray:/etc/xray
+      - ./config.json:/etc/xray/config.json
+      - /etc/letsencrypt/live/elec.starstar.cf/fullchain.pem:/etc/xray/fullchain.pem
+      - /etc/letsencrypt/live/elec.starstar.cf/privkey.pem:/etc/xray/privkey.pem
+
