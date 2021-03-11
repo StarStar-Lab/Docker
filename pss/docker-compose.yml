@@ -1,0 +1,20 @@
+version: "3.0"
+services: 
+  pss:
+    image: akyakya/pack_some_script:latest
+    container_name: pss
+    restart: always
+    tty: true
+    volumes:
+      - ./logs:/logs
+      - ./my_crontab_list.sh:/pss/my_crontab_list.sh
+      - ./pss_shell_mod.sh:/pss/pss_shell_mod.sh
+      - ./Cookie:/Cookie
+    environment:
+      # 注意环境变量填写值的时候一律不需要引号（""或者''）下面这些只是事例，根据自己的需求增加删除
+      - CUSTOM_LIST_FILE=my_crontab_list.sh 
+      - CUSTOM_LIST_MERGE_TYPE=append    
+      - CUSTOM_SHELL_FILE=/pss/pss_shell_mod.sh
+    env_file: ./pss.env
+
+          
