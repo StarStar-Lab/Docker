@@ -16,3 +16,6 @@ RUN set -ex \
         curl \
         && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
         && echo "Asia/Shanghai" > /etc/timezone
+ENTRYPOINT ["docker_entrypoint.sh"]
+
+CMD [ "crond" ]
