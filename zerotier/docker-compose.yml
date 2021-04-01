@@ -1,0 +1,10 @@
+version: "3"
+services:
+  zerotier:
+    build:
+      context: .
+    image: zerotier
+    restart: always
+    container_name: "zerotier"
+    network_mode: host
+    privileged: true
