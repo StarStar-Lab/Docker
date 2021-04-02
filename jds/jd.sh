@@ -1,5 +1,5 @@
 #!/bin/sh
-#set -e
+set -e
 #cd /scripts/docker
 #wget -O shell_script_mod.sh https://github.com/iouAkira/someDockerfile/raw/master/jd_scripts/shell_script_mod.sh
 #chmod +x shell_script_mod.sh
@@ -30,4 +30,4 @@ if [ -n "$(ls /monk/normal/*_*.js)" ]; then
 fi
 cat /monk/i-chenzhe/remote_crontab_list.sh /monk/remote_crontab_list.sh >> $mergedListFile
 echo "修改超市兑换物品"
-export MARKET_COIN_TO_BEANS='蒙牛 纯甄'
+export MARKET_COIN_TO_BEANS=蒙牛 纯甄
