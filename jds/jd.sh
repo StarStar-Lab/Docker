@@ -29,5 +29,4 @@ if [ -n "$(ls /monk/normal/*_*.js)" ]; then
   cp -f /monk/normal/*_*.js /scripts
 fi
 cat /monk/i-chenzhe/remote_crontab_list.sh /monk/remote_crontab_list.sh >> $mergedListFile
-echo "修改超市兑换物品"
-export MARKET_COIN_TO_BEANS='蒙牛 纯甄'
+echo "完成"
