@@ -4,6 +4,7 @@ service:
     image: adguard/adguardhome
     container_name: adguard
     hostname: adguard
+    restart: always
     volumes:
       - ./workdir:/opt/adguardhome/work
       - ./confdir:/opt/adguardhome/conf
