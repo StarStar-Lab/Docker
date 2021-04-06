@@ -1,5 +1,5 @@
 version: "3.0"
-service:
+services:
   adguard:
     image: adguard/adguardhome
     container_name: adguard
