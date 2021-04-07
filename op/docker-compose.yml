@@ -1,8 +1,8 @@
 version: "3.0"
-services: 
+services:
   openwrt:
     image: unifreq/openwrt-aarch64
     restart: always
-    network: macnet 
+    network_mode: macnet
     privileged: true
-    container_name: openwrt
+    container_name: openwrt                            
