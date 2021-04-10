@@ -1,0 +1,9 @@
+bark:
+  image: finab/bark-server
+  volumes: 
+    - ./bark-data:/data
+  ports:
+    - 127.0.0.1:2131:8080
+  container_name: bark
+  tty: true
+  restart: always
