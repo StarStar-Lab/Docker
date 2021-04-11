@@ -1,6 +1,0 @@
-**/*.log
-**/*.env
-**/*.db
-**/config.*
-**/secret*
-**/cookie

@@ -9,9 +9,9 @@ services:
     volumes:
       - db:/var/lib/postgresql/data
     environment:
-      POSTGRES_USER: 
-      POSTGRES_PASSWORD: 
-      POSTGRES_DB: 
+      - POSTGRES_USER=freshrss
+      - POSTGRES_PASSWORD=freshrss
+      - POSTGRES_DB=freshrss
 
   freshrss-app:
     image: freshrss/freshrss:latest

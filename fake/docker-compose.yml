@@ -1,7 +1,0 @@
-mario:
-  image: hub.c.163.com/bingohuang/docker-mario:1.0
-  restart: always
-  container_name: mario
-  ports:
-    - 1985:80
-
