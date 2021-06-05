@@ -1,0 +1,14 @@
+version: '3.0'
+services:
+  tele-aria2:
+    image:  p3terx/tele-aria2:0.2.2
+    container_name: tele-aria2
+    restart: unless-stopped
+    network_mode: host
+    volumes: 
+      - ./.tele-aria2-conf.json:/config.json
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+    
